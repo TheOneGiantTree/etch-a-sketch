@@ -1,0 +1,25 @@
+:root {
+    --columns: 1;
+    --rows: 1;
+}
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh; 
+}
+
+#main {
+    display: grid;
+    border-style: solid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-template-rows: repeat(var(--rows), 1fr); 
+    aspect-ratio: 1/1;
+    max-height: 600px; 
+}
+.cell {
+    border: 1px solid;
+    aspect-ratio: 1/1;
+}
+.black {
+    background-color: black;
+}
